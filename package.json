@@ -1,0 +1,42 @@
+{
+  "name": "crypto-news",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Priyanka Sukhalani",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "crypto": "^1.0.1",
+    "email-existence": "^0.1.6",
+    "email-templates": "*",
+    "emailjs": "^2.2.0",
+    "express": "*",
+    "express-fileupload": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "file-system": "*",
+    "iconv": "^2.3.2",
+    "kickbox": "^2.0.4",
+    "mysql": "*",
+    "nodemailer": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
+    "querystring": "*",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "smtp-server": "*",
+    "then-busboy": "*",
+    "utf8": "^3.0.0"
+  }
+}

@@ -1,0 +1,86 @@
+<div class="container">
+	{{#if data}}
+
+		{{#if data.Response }}
+			<br> <br>
+			<div class="alert alert-warning">There is no data available for the symbol: '{{quote}}'. </div> 
+			<br>
+			<h1 style="text-align: center;"> No Result Found... <i class="fas fa-frown fa-lg fa-fw"></i> </h1>
+
+		{{else}}
+			
+			<div class="jumbotron jumbotron-fluid" style="background:transparent !important">
+			  	<div class="container">
+			    	<h1 style="text-align: center;">Loopup Table</h1>
+			    	<br>
+
+			    	<table class="table table-striped table-bordered table-hover" style="border: 1px solid black;">
+			  			<thead>
+					    	<tr>
+					    		<th scope="col">Name</th>
+					    		<th scope="col">Symbol</th>
+								<th scope="col">Price</th>
+								<th scope="col">Daily High</th>
+								<th scope="col">Daily Low</th>
+								<th scope="col">Market Cap</th>
+								<th scope="col">Supply</th>
+								<th scope="col">24 Hour Change</th>
+								<th scope="col">Last Market</th>
+					    	</tr>
+			  			</thead>
+			  
+			  			<tbody>
+			  				{{#each data.DISPLAY}}
+					    		<tr>
+					      			<td>{{@key}}</td>
+					      			<td>{{this.USD.FROMSYMBOL}}</td>
+					      			<td>{{this.USD.PRICE}}</td>
+					      			<td>{{this.USD.HIGHDAY}}</td>
+					      			<td>{{this.USD.LOWDAY}}</td>
+					      			<td>{{this.USD.MKTCAP}}</td>
+					      			<td>{{this.USD.SUPPLY}}</td>
+					      			<td>{{this.USD.CHANGE24HOUR}}</td>
+					      			<td>{{this.USD.LASTMARKET}}</td>
+					    		</tr>
+			    			{{/each}}
+			  			</tbody>
+					</table>
+			    	
+				</div>
+			</div>
+
+		{{/if}}
+
+	{{else}}
+		<br>
+		<hr>
+		<h1 style="text-align: center;"> No Currency is being searched...Try Searching using Search bar!!!</h1>
+		<hr>
+	{{/if}}
+
+	<br> <br> <br>
+		
+</div>
+
+<div style="position:fixed; bottom: 0px; width: 100%; text-align: center;">	
+	<p style="color: blue; ">&copy;&nbsp;Priyanka Sukhalani &nbsp; <br> </p>
+			
+	<a href="https://github.com" target="_blank">
+		Github
+	</a> 
+	&nbsp;&nbsp;
+						
+	<a href="https://facebook.com" target="_blank">
+		Facebook
+	</a> 
+	&nbsp;&nbsp;
+
+	<a href="https://instagram.com" target="_blank">
+		Instagram
+	</a> 
+	&nbsp;&nbsp;
+
+	<a href="https://twitter.com" target="_blank">
+		Twitter
+	</a>
+</div>
